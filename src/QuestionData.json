@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What color is the sky?",
+    "categories": ["Front End", "Back End", "DOM"],
+    "points": 200
+  },
+  {
+    "question": "How many power rangers were there?",
+    "categories": ["TV", "90s"],
+    "points": 300
+  },
+  {
+    "question": "What is the purple ninja turtles name?",
+    "categories": ["TV", "Celebrities", "Cartoons"],
+    "points": 400
+  },
+  {
+    "question": "Where were you today?",
+    "categories": ["Back End", "DOM"],
+    "points": 200
+  },
+  {
+    "question": "How many people are in the room?",
+    "categories": ["Front End", "Back End"],
+    "points": 300
+  },
+  {
+    "question": "What is Kelly Kapowski's real name?",
+    "categories": ["TV", "Celebrities"],
+    "points": 400
+  },
+  {
+    "question": "What is Mr. Rogers first name?",
+    "categories": ["TV", "Celebrities"],
+    "points": 200
+  },
+  {
+    "question": "Who won the 1988 World Series?",
+    "categories": ["Sports", "Baseball", "The Big Game"],
+    "points": 300
+  },
+  {
+    "question": "Who formed the first chicken tender?",
+    "categories": ["Meals", "Food"],
+    "points": 400
+  }
+
+]
