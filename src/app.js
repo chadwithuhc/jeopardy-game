@@ -4,6 +4,7 @@ import QuestionsStore from './stores/QuestionsStore'
 import CategoryPicker from './components/CategoryPicker'
 import CategoryList from './components/CategoryList'
 import QuestionFullscreen from './components/QuestionFullscreen'
+import AddUsers from './components/AddUsers'
 
 export default class App extends React.Component {
 
@@ -12,7 +13,8 @@ export default class App extends React.Component {
     this.state = {
       categories: QuestionsStore.categories,
       selectedCategories: [],
-      currentQuestion: null
+      currentQuestion: null,
+      users: null
     }
   }
 
@@ -31,22 +33,49 @@ export default class App extends React.Component {
     console.log('Answered Question')
   }
 
+  onSubmitUsers = (users) => {
+    this.setState({ users })
+    console.log(users);
+  }
+
+  renderQuestionScreen = () => {
+    console.log('currentQuestion', !!this.state.currentQuestion)
+    return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onOptionClose} /> : null
+  }
+
+  renderUsersForm = () => {
+    return !this.state.users ? <AddUsers onSubmit={this.onSubmitUsers} /> : null
+  }
+
+  renderCategoryPicker = () => {
+    return !this.state.selectedCategories.length && this.state.users ? (
+      <CategoryPicker categories={this.state.categories} selected={this.state.selectedCategories} onSaveCategories={this.onSaveCategories} visible={!this.state.selectedCategories.length} />
+    ) : null
+  }
+
+  renderSelectedCategories = () => {
+    return this.state.selectedCategories.length && this.state.users ? (
+      <div className="container">
+        <div className="row">
+        {this.state.selectedCategories.map((category) => {
+          return <CategoryList category={category} key={category} options={QuestionsStore.getQuestionsForCategory(category)} onOptionOpen={this.onOptionOpen} />
+        })}
+        </div>
+      </div>
+    ) : null
+  }
+
   render() {
     console.log(QuestionsStore);
     return (
       <main>
-        <CategoryPicker categories={this.state.categories} selected={this.state.selectedCategories} onSaveCategories={this.onSaveCategories} visible={!this.state.selectedCategories.length} />
+        {this.renderCategoryPicker()}
 
-        <div className="container">
-          <div className="row">
-          {this.state.selectedCategories.map((category) => {
-            return <CategoryList category={category} key={category} options={QuestionsStore.getQuestionsForCategory(category)} onOptionOpen={this.onOptionOpen} />
-          })}
-          </div>
-        </div>
+        {this.renderSelectedCategories()}
 
-        <QuestionFullscreen question={this.state.currentQuestion} visible={!!this.state.currentQuestion} onClose={this.onOptionClose} />
+        {this.renderQuestionScreen()}
 
+        {this.renderUsersForm()}
       </main>
     )
   }

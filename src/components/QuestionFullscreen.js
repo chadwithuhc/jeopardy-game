@@ -5,8 +5,7 @@ export default class QuestionFullscreen extends React.Component {
 
   render() {
     let classes = classnames({
-      'question-fullscreen': true,
-      'hidden': !this.props.visible
+      'question-fullscreen': true
     })
 
     let question = this.props.question ? this.props.question.question : null
