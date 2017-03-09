@@ -5,8 +5,8 @@ export default class AddUsers extends React.Component {
   onSubmit = (e) => {
     e.preventDefault()
 
-    let users = this.refs.users.value.split(',').map((user) => {
-      return { name: user.trim(), points: 0 }
+    let users = this.refs.users.value.split(',').map((user, i) => {
+      return { name: user.trim(), points: 0, myTurn: i === 0 }
     })
 
     this.props.onSubmit(users)

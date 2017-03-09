@@ -5,6 +5,7 @@ import CategoryPicker from './components/CategoryPicker'
 import CategoryList from './components/CategoryList'
 import QuestionFullscreen from './components/QuestionFullscreen'
 import AddUsers from './components/AddUsers'
+import ScoreBox from './components/ScoreBox'
 
 export default class App extends React.Component {
 
@@ -16,6 +17,16 @@ export default class App extends React.Component {
       currentQuestion: null,
       users: null
     }
+
+    // DEBUG
+    // this.state.users = [
+    //   { name: 'Lisa', points: 0, myTurn: 1 },
+    //   { name: 'Bart', points: 0 },
+    //   { name: 'Marge', points: 0 }
+    // ]
+    // this.state.selectedCategories = [
+    //   '90s', 'Cartoons', 'Baseball'
+    // ]
   }
 
   onSaveCategories = (selectedCategories) => {
@@ -65,11 +76,19 @@ export default class App extends React.Component {
     ) : null
   }
 
+  renderScoreBox = () => {
+    return this.state.selectedCategories.length && this.state.users ? (
+      <ScoreBox users={this.state.users} onSwitchUser={this.onSubmitUsers} />
+    ) : null
+  }
+
   render() {
     console.log(QuestionsStore);
     return (
       <main>
         {this.renderCategoryPicker()}
+
+        {this.renderScoreBox()}
 
         {this.renderSelectedCategories()}
 
