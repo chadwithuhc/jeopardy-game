@@ -21,5 +21,5 @@ export default class QuestionFullscreen extends React.Component {
 }
 
 QuestionFullscreen.defaultProps = {
-  onClose: () => {}
+  onClose() {}
 }

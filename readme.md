@@ -14,9 +14,12 @@ Files will be watched and built continuously until you quit the command
 ## Features
 
 - [ ] Game setup
-  - [ ] Enter user names
+  - [x] Enter user names
   - [x] Choose Categories
+  - [ ] Polish Design
 - [ ] Game play
-  - [ ] Display Jeopardy board
+  - [x] Display Jeopardy board
+  - [ ] Players and score box
   - [x] Show a question when selected
+  - [ ] Attribute answer to user
   - [ ] Answered questions can't be selected again
