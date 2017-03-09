@@ -25,7 +25,7 @@ export default class App extends React.Component {
     //   { name: 'Marge', points: 0 }
     // ]
     // this.state.selectedCategories = [
-    //   '90s', 'Cartoons', 'Baseball'
+    //   'Front End', 'Back End', 'DOM'
     // ]
   }
 
@@ -49,9 +49,17 @@ export default class App extends React.Component {
     console.log(users);
   }
 
+  // Auto increase scores and switch to next user
+  onUpdateScores = (users) => {
+    console.log(this.state)
+    //this.state.currentQuestion.answered = true
+    this.setState({ users })
+    this.onOptionClose()
+  }
+
   renderQuestionScreen = () => {
     console.log('currentQuestion', !!this.state.currentQuestion)
-    return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onOptionClose} /> : null
+    return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onOptionClose} users={this.state.users} onUpdateScores={this.onUpdateScores} /> : null
   }
 
   renderUsersForm = () => {
@@ -60,7 +68,7 @@ export default class App extends React.Component {
 
   renderCategoryPicker = () => {
     return !this.state.selectedCategories.length && this.state.users ? (
-      <CategoryPicker categories={this.state.categories} selected={this.state.selectedCategories} onSaveCategories={this.onSaveCategories} visible={!this.state.selectedCategories.length} />
+      <CategoryPicker categories={this.state.categories} selected={this.state.selectedCategories} onSaveCategories={this.onSaveCategories} />
     ) : null
   }
 
