@@ -51,8 +51,7 @@ export default class App extends React.Component {
 
   // Auto increase scores and switch to next user
   onUpdateScores = (users) => {
-    console.log(this.state)
-    //this.state.currentQuestion.answered = true
+    QuestionsStore.removeQuestion(this.state.currentQuestion)
     this.setState({ users })
     this.onOptionClose()
   }

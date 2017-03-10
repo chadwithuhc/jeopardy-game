@@ -36,6 +36,12 @@ class QuestionsStore {
     })
   }
 
+  removeQuestion = (question) => {
+    this.data = this.data.filter((item) => {
+      return (item.question !== question.question)
+    })
+  }
+
 }
 
 const questionsStore = new QuestionsStore(Questions)
