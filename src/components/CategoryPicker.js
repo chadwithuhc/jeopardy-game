@@ -27,8 +27,7 @@ export default class CategoryPicker extends React.Component {
 
   render() {
     let classes = classnames({
-      'category-picker': true,
-      'hidden': !this.props.visible
+      'category-picker': true
     })
     return (
       <section className={classes}>

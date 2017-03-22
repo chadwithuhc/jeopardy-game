@@ -1,4 +1,4 @@
-import Questions from '../QuestionData.json'
+import Questions from '../data/PhoneScreenData.json'
 
 class QuestionsStore {
 
