@@ -1,4 +1,5 @@
-import Questions from '../data/PhoneScreenData.json'
+import PhoneScreenData from '../data/PhoneScreenData.json'
+import JavascriptData from '../data/JavascriptData.json'
 
 class QuestionsStore {
 
@@ -44,6 +45,6 @@ class QuestionsStore {
 
 }
 
-const questionsStore = new QuestionsStore(Questions)
+const questionsStore = new QuestionsStore(PhoneScreenData.concat(JavascriptData))
 
 export default questionsStore

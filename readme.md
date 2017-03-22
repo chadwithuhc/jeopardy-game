@@ -24,6 +24,12 @@ Files will be watched and built continuously until you quit the command
   - [ ] Attribute answer to user
   - [ ] Answered questions can't be selected again
 
+## Data Manager
+
+- [ ] Allows categories
+- [ ] Allows points
+- [ ] Allows increasing / decreasing points based on answer
+
 ## Refactors
 
 - [ ] User data store

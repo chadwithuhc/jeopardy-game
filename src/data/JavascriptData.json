@@ -1,0 +1,341 @@
+[
+  {
+    "question": "Describe event bubbling.",
+    "categories": [
+      "Javascript",
+      "DOM",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is the difference between document load and document ready?",
+    "categories": [
+      "Javascript",
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?",
+    "categories": [
+      "Javascript",
+      "Scope"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What are the pros and cons of using Promises instead of callbacks?",
+    "categories": [
+      "Javascript",
+      "Async"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Explain the difference between mutable and immutable objects.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is an example of an immutable object in JavaScript?",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Explain the difference between synchronous and asynchronous functions.",
+    "categories": [
+      "Javascript",
+      "Async",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is event loop?",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What are six data types in JavaScript?",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What's the difference between `null` and `undefined`?",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What does the `this` keyword refer to in JavaScript?",
+    "answer": "1. The first value passed to call() or apply() 2. The value that was bind()ed to the function 3. The calling object 4. The global scope",
+    "categories": [
+      "Javascript",
+      "Scope"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How does inheritance work in JavaScript?",
+    "answer": "JavaScript has prototypal inheritance. Rather than a blueprint, objects are linked to other object instances via prototypes.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Name two programming paradigms.",
+    "answer": "Common answers include procedural, functional, and object-oriented. May also say imperative/delcarative.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What's the difference between imperative programming and declarative programming?",
+    "answer": "Imperative programming tells the computer what to do. Declarative programming tells the computer what you want, ignorant of the steps required to produce it.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What are some tenets of functional programming?",
+    "answer": "1. Functional purity (no side-effects, output derived only from input)  2. Simple functions  3. First-class functions (functions as variables)  4. Higher-order functions (functions that return functions)",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is immutability?",
+    "answer": "When a stored value can't be changed. Functional programs/languages replace values with new values, rather than changing (or \"mutating\") the existing ones.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is async in JavaScript?",
+    "answer": "When a function does not immediately return a value. The rest of the program continues executing, requiring special handling and \"callback functions\" for when function calls complete.",
+    "categories": [
+      "Javascript",
+      "Async",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is the DOM?",
+    "answer": "Document Object Model. It's the API for web pages, and what HTML gets parsed into.",
+    "categories": [
+      "Javascript",
+      "DOM",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain how the factory pattern works.",
+    "answer": "A factory is when you need an object with a particular interface, but you let a constructor decide which specific object you get back.",
+    "categories": [
+      "OOP",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Name as many kinds of loops as you can.",
+    "answer": "For, While, Do While, For-In, For-Each, Map, Reduce...",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Name as many different kinds of conditionals as you can.",
+    "answer": "if/then/elseIf/else, switch, ternary.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What creates scope in Javascript?",
+    "answer": "There's global scope and function scope in ES5. In ES2015 there's also Block scope.",
+    "categories": [
+      "Javascript",
+      "Scope",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "How can variables be assigned in Javascript in ES6?",
+    "answer": "`var` for function scope, `let` for block scope, `const` for block scope protected against reassignment.",
+    "categories": [
+      "Javascript",
+      "Scope",
+      "ES6"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is a typical use case for anonymous functions?",
+    "answer": "Callbacks, like in the `.then` of an AJAX call, IIFE",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Name 2 or more ways to define a global variable in Javascript",
+    "answer": "Leave off the `var` or assign it to the `window`",
+    "categories": [
+      "Javascript",
+      "Scope"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What does AJAX stand for? Explain how it works in as much detail as possible",
+    "answer": "Asynchronous javascript and xml, it just makes a request to a specific url with a verb and data (and callbacks). Then it makes the call with the appropriate headers.",
+    "categories": [
+      "Javascript",
+      "Async",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference between `==` and `===` in JS?",
+    "answer": "Type Coercion -- `==` doesn't care about type (i.e. type coercion), so `\"2\" == 2` will evaluate to `true`. `===` does care about type, so `\"2\" === 2` will evaluate to `false`.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is \"callback hell\" and how can it be avoided?",
+    "categories": [
+      "Javascript",
+      "Async"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference between Primitive and Reference types in Javascript?",
+    "answer": "A primitive type has a fixed amount of memory that it takes up, where as a reference type does not. Examples of primitive types are boolean values or integers, where as examples of ref types would be arrays. ref types like arrays are made up of references to their values, hence the name",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Explain event delegation.",
+    "categories": [
+      "Javascript",
+      "Concepts",
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Explain how prototypal inheritance works.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for these?",
+    "answer": "An undefined value typically comes from a variable that has been declared, but was not assigned a value.",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is a closure, and how/why would you use one?",
+    "answer": "A closure is a function that maintains a reference to it's outer scope. These are useful in high-order functions.",
+    "categories": [
+      "Javascript",
+      "Concepts",
+      "Scope"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What's the difference between `.call` and `.apply`?",
+    "answer": "They both server the same purpose, but one accepts an array or arguments instead of a comma seperated list.",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Explain `Function.prototype.bind()`.",
+    "answer": "Bind works like call and apply, but instead of invoking the function it's applied to, it returns a new function with the bound context and arguments.",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Explain \"hoisting\".",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Why is extending built-in JavaScript objects not a good idea?",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is `\"use strict\";`? What are the advantages and disadvantages to using it?",
+    "categories": [
+      "Javascript",
+      "Concepts"
+    ],
+    "points": 300
+  }  
+]
