@@ -14,6 +14,7 @@ class QuestionsStore {
 
   load = (questions) => {
     questions.forEach(this.addQuestion)
+    this.sortQuestions()
   }
 
   addQuestion = (question) => {
@@ -41,6 +42,10 @@ class QuestionsStore {
     this.data = this.data.filter((item) => {
       return (item.question !== question.question)
     })
+  }
+
+  sortQuestions = () => {
+    this.data.sort((a, b) => a.points > b.points)
   }
 
 }
