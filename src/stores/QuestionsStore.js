@@ -1,5 +1,6 @@
 import PhoneScreenData from '../data/PhoneScreenData.json'
 import JavascriptData from '../data/JavascriptData.json'
+import BackendData from '../data/BackendData.json'
 
 class QuestionsStore {
 
@@ -15,6 +16,7 @@ class QuestionsStore {
   load = (questions) => {
     questions.forEach(this.addQuestion)
     this.sortQuestions()
+    this.sortCategories()
   }
 
   addQuestion = (question) => {
@@ -45,11 +47,17 @@ class QuestionsStore {
   }
 
   sortQuestions = () => {
-    this.data.sort((a, b) => a.points > b.points)
+    this.data.sort((a, b) => a.points - b.points)
+  }
+
+  sortCategories = () => {
+    this.categories.sort()
   }
 
 }
 
-const questionsStore = new QuestionsStore(PhoneScreenData.concat(JavascriptData))
+const questionsStore = new QuestionsStore(
+  PhoneScreenData.concat(JavascriptData).concat(BackendData)
+)
 
 export default questionsStore

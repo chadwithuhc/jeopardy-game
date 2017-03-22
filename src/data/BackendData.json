@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What's version control?",
+    "categories": [
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Teach me how to use version control.",
+    "categories": [
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is an error-first callback?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How can you listen on port 80 with Node?",
+    "categories": [
+      "Back end",
+      "Node.js",
+      "Servers"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What's the difference between operational and programmer errors?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 400
+  },
+  {
+    "question": "How does Node.js handle child threads?",
+    "categories": [
+      "Back end",
+      "Node.js",
+      "Servers"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is the preferred method of resolving unhandled exceptions in Node.js?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How does Node.js support multi-processor platforms, and does it fully utilize all processor resources?",
+    "categories": [
+      "Back end",
+      "Node.js",
+      "Servers"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is typically the first argument passed to a Node.js callback handler?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is npm?",
+    "categories": [
+      "Back end",
+      "Concepts",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is `package.json` for?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is nodemon? Why is it helpful?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain why `module.export` is used",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What module format does Node.js use?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Name two objects that are NOT available to us in Node.js that are available in the browser.",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is Express JS?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Why do we add the text \"node_modules\" to our `.gitignore`?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What does the `--save` flag do when we install modules with npm?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is localhost?",
+    "categories": [
+      "Back end",
+      "Servers"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is HTTP?",
+    "categories": [
+      "Back end",
+      "Servers"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain GET request vs POST request",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Servers"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What does it mean to serve static assets?",
+    "categories": [
+      "Back end",
+      "Servers"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is the difference between `require(\"express\")` and `require(\"./express\")`?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is middleware?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What does body-parser enable us to do?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is the difference between `req.params`, `req.query` and `req.body`?",
+    "categories": [
+      "Back end",
+      "Node.js"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Why can't we use jQuery in our server code?",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Javascript"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain cookies vs sessions",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Concepts"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What are environment variables useful for?",
+    "categories": [
+      "Back end"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What is JSON?",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Javascript"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is a RESTful API?",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "What is an API?",
+    "categories": [
+      "Back end",
+      "Front end",
+      "Concepts"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Explain browser caching including it's benefits and challenges",
+    "categories": [
+      "Back end",
+      "Front end"
+    ],
+    "points": 300
+  },
+  {
+    "question": "How does local storage compare to other storage solutions?",
+    "categories": [
+      "Front end",
+      "Concepts"
+    ],
+    "points": 400
+  },
+  {
+    "question": "What is CORS?",
+    "categories": [
+      "Front end",
+      "Back end",
+      "Concepts",
+      "Security",
+      "APIs"
+    ],
+    "points": 300
+  },
+  {
+    "question": "What are CSRF attacks? Give an example of how we can make one.",
+    "categories": [
+      "Front end",
+      "Back end",
+      "Security"
+    ],
+    "points": 400
+  }
+
+]
