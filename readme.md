@@ -19,10 +19,14 @@ Files will be watched and built continuously until you quit the command
   - [ ] Polish Design
 - [ ] Game play
   - [x] Display Jeopardy board
-  - [ ] Players and score box
+  - [x] Players and score box
   - [x] Show a question when selected
-  - [ ] Attribute answer to user
-  - [ ] Answered questions can't be selected again
+  - [x] Attribute answer to user
+  - [x] Answered questions can't be selected again
+  - [ ] Allow closing question without scoring points
+  - [ ] Allow bonus points for great answers
+  - [ ] Modify users when in game
+  - [ ] Limit number of items per category
 
 ## Data Manager
 

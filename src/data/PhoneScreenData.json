@@ -56,14 +56,6 @@
     "points": 200
   },
   {
-    "question": "Which of your managers gets the best results and most value out of you and why?",
-    "categories": [
-      "Phone Screen",
-      "Open-ended"
-    ],
-    "points": 300
-  },
-  {
     "question": "Tell me about some of the more interesting or difficult problems you've been working on the past few years.",
     "categories": [
       "Phone Screen",
@@ -86,14 +78,6 @@
       "Open-ended"
     ],
     "points": 400
-  },
-  {
-    "question": "Why do you get up in the morning?",
-    "categories": [
-      "Phone Screen",
-      "Open-ended"
-    ],
-    "points": 500
   },
   {
     "question": "Why are you taking the time to talk to me (recruiter, employer, etc.) today?",
