@@ -59,7 +59,7 @@ export default class QuestionFullscreen extends React.Component {
       <div className={classes}>
         <h1>{question}</h1>
         {this.renderUserButtons()}
-        <button className="btn btn-info" onClick={() => this.props.onClose()}>Close</button>
+        <button className="btn btn-info" onClick={() => this.submitAnswer({})}>Close</button>
       </div>
     )
   }

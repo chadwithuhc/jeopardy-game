@@ -23,7 +23,7 @@ Files will be watched and built continuously until you quit the command
   - [x] Show a question when selected
   - [x] Attribute answer to user
   - [x] Answered questions can't be selected again
-  - [ ] Allow closing question without scoring points
+  - [x] Allow closing question without scoring points
   - [ ] Allow bonus points for great answers
   - [ ] Modify users when in game
   - [ ] Limit number of items per category

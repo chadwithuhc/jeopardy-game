@@ -58,7 +58,7 @@ export default class App extends React.Component {
 
   renderQuestionScreen = () => {
     console.log('currentQuestion', !!this.state.currentQuestion)
-    return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onOptionClose} users={this.state.users} onUpdateScores={this.onUpdateScores} /> : null
+    return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onUpdateScores} users={this.state.users} onUpdateScores={this.onUpdateScores} /> : null
   }
 
   renderUsersForm = () => {
