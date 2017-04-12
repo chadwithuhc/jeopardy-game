@@ -56,6 +56,22 @@
     "points": 200
   },
   {
+    "question": "What reasons do you have for leaving your current (or most recent) job?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 300
+  },
+ {
+    "question": "Where do you see yourself in five years?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 400
+  },
+  {
     "question": "Tell me about some of the more interesting or difficult problems you've been working on the past few years.",
     "categories": [
       "Phone Screen",
@@ -80,12 +96,44 @@
     "points": 400
   },
   {
+    "question": "How do you see yourself contributing to this team in this position?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 500
+  },
+  {
     "question": "Why are you taking the time to talk to me (recruiter, employer, etc.) today?",
     "categories": [
       "Phone Screen",
       "Open-ended"
     ],
     "points": 400
+  },
+{
+    "question": "What are your salary requirements / expectations?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 200
+  },
+{
+    "question": "Detail the most successful idea you have you taken from concept to launch?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 500
+  },
+{
+    "question": "Tell me about a great [product, service, etc.] you've encountered recently. Why do you like it?",
+    "categories": [
+      "Phone Screen",
+      "Open-ended"
+    ],
+    "points": 500
   },
   {
     "question": "What’s the one thing we haven’t asked you about that you want to make sure we know?",
