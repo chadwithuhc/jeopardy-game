@@ -12,7 +12,7 @@
 export default {
 
   // Mock all question data
-  mockQuestions: false,
+  mockQuestions: true,
   mockQuestionsState: PhoneScreenData.concat(JavascriptData).concat(BackendData),
 
   // Auto-filled users
