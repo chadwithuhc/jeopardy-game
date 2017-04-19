@@ -6,6 +6,7 @@ import CategoryList from './components/CategoryList'
 import QuestionFullscreen from './components/QuestionFullscreen'
 import AddUsers from './components/AddUsers'
 import ScoreBox from './components/ScoreBox'
+import Debugging from './debugging'
 
 export default class App extends React.Component {
 
@@ -19,14 +20,25 @@ export default class App extends React.Component {
     }
 
     // DEBUG
-    // this.state.users = [
-    //   { name: 'Lisa', points: 0, myTurn: 1 },
-    //   { name: 'Bart', points: 0 },
-    //   { name: 'Marge', points: 0 }
-    // ]
-    // this.state.selectedCategories = [
-    //   'Front End', 'Back End', 'DOM'
-    // ]
+    if (Debugging.mockUsers) {
+      this.state.users = Debugging.mockUsersState
+    }
+    if (Debugging.mockCategories) {
+      this.state.selectedCategories = Debugging.mockCategoriesState
+    }
+  }
+
+  componentDidMount() {
+    // DEBUG
+    if (Debugging.mockQuestions) {
+      QuestionsStore.load(Debugging.mockQuestionsState)
+      this.forceUpdate()
+      return // END
+    }
+
+    QuestionsStore.loadData().then(({ categories }) => {
+      this.setState({ categories })
+    })
   }
 
   onSaveCategories = (selectedCategories) => {
@@ -57,7 +69,6 @@ export default class App extends React.Component {
   }
 
   renderQuestionScreen = () => {
-    console.log('currentQuestion', !!this.state.currentQuestion)
     return !!this.state.currentQuestion ? <QuestionFullscreen question={this.state.currentQuestion} onClose={this.onUpdateScores} users={this.state.users} onUpdateScores={this.onUpdateScores} /> : null
   }
 
@@ -90,7 +101,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(QuestionsStore);
     return (
       <main>
         {this.renderCategoryPicker()}

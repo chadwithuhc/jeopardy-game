@@ -1,11 +1,7 @@
-import PhoneScreenData from '../data/PhoneScreenData.json'
-import JavascriptData from '../data/JavascriptData.json'
-import BackendData from '../data/BackendData.json'
-
 class QuestionsStore {
 
   constructor(questions) {
-    if (questions.length) {
+    if (questions && questions.length) {
       this.load(questions)
     }
   }
@@ -13,10 +9,41 @@ class QuestionsStore {
   categories = []
   data = []
 
+  loadData = () => {
+    return fetch('https://api.cosmicjs.com/v1/clowde/object-type/devterms?limit=500')
+      .then((res) => res.json())
+      .then((data) => {
+        const questions = data.objects.map((obj) => {
+          return {
+            question: obj.title,
+            categories: obj.metadata.categories,
+            points: obj.metadata.points
+          }
+        })
+
+        // DEBUG
+        // This is the list of categories we have marked as an option on the server, not necessarily the categories we loaded
+        console.log('Available Categories:', data.objects[0].metafields[0].options.map((opt) => opt.value))
+
+        this.load(questions)
+
+        return {
+          questions: this.data,
+          categories: this.categories
+        }
+      })
+  }
+
   load = (questions) => {
     questions.forEach(this.addQuestion)
+    this.reportStats()
     this.sortQuestions()
     this.sortCategories()
+  }
+
+  reportStats = () => {
+    console.info('Categories Loaded:', this.categories.length, this.categories)
+    console.info('Questions Loaded:', this.data.length, this.data)
   }
 
   addQuestion = (question) => {
@@ -56,8 +83,4 @@ class QuestionsStore {
 
 }
 
-const questionsStore = new QuestionsStore(
-  PhoneScreenData.concat(JavascriptData).concat(BackendData)
-)
-
-export default questionsStore
+export default (new QuestionsStore())
