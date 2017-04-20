@@ -6,7 +6,7 @@ A Jeopardy Game built in ReactJS
 
 Clone locally and run `npm install`
 
-Then to start, run `npm start`
+Then to start, run `npm run local`
 
 Files will be watched and built continuously until you quit the command
 
