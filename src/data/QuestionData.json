@@ -7,12 +7,12 @@
   {
     "question": "How many power rangers were there?",
     "categories": ["TV", "90s"],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is the purple ninja turtles name?",
     "categories": ["TV", "Celebrities", "Cartoons"],
-    "points": 400
+    "points": 600
   },
   {
     "question": "Where were you today?",
@@ -22,12 +22,12 @@
   {
     "question": "How many people are in the room?",
     "categories": ["Front End", "Back End"],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is Kelly Kapowski's real name?",
     "categories": ["TV", "Celebrities"],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What is Mr. Rogers first name?",
@@ -37,12 +37,12 @@
   {
     "question": "Who won the 1988 World Series?",
     "categories": ["Sports", "Baseball", "The Big Game"],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Who formed the first chicken tender?",
     "categories": ["Meals", "Food"],
-    "points": 400
+    "points": 600
   }
 
 ]

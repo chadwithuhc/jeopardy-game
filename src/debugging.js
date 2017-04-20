@@ -16,7 +16,7 @@ export default {
   mockQuestionsState: PhoneScreenData.concat(JavascriptData).concat(BackendData),
 
   // Auto-filled users
-  mockUsers: true,
+  mockUsers: false,
   mockUsersState: [
     { name: 'Lisa', points: 0, myTurn: 1 },
     { name: 'Bart', points: 0 },
@@ -24,7 +24,7 @@ export default {
   ],
 
   // Automatically selected categories
-  mockCategories: true,
+  mockCategories: false,
   mockCategoriesState: [ // CASE-SENSITIVE
     'Front end', 'Back end', 'DOM', 'Phone Screen'
   ]

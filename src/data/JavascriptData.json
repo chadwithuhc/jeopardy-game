@@ -6,7 +6,7 @@
       "DOM",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is the difference between document load and document ready?",
@@ -14,7 +14,7 @@
       "Javascript",
       "DOM"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?",
@@ -22,7 +22,7 @@
       "Javascript",
       "Scope"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What are the pros and cons of using Promises instead of callbacks?",
@@ -30,14 +30,14 @@
       "Javascript",
       "Async"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?",
     "categories": [
       "Javascript"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Explain the difference between mutable and immutable objects.",
@@ -45,7 +45,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is an example of an immutable object in JavaScript?",
@@ -53,7 +53,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Explain the difference between synchronous and asynchronous functions.",
@@ -62,7 +62,7 @@
       "Async",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is event loop?",
@@ -70,7 +70,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What are six data types in JavaScript?",
@@ -94,7 +94,7 @@
       "Javascript",
       "Scope"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "How does inheritance work in JavaScript?",
@@ -103,7 +103,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "Name two programming paradigms.",
@@ -112,7 +112,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What's the difference between imperative programming and declarative programming?",
@@ -121,7 +121,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What are some tenets of functional programming?",
@@ -130,7 +130,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What is immutability?",
@@ -139,7 +139,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is async in JavaScript?",
@@ -149,7 +149,7 @@
       "Async",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is the DOM?",
@@ -168,7 +168,7 @@
       "OOP",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "Name as many kinds of loops as you can.",
@@ -177,7 +177,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Name as many different kinds of conditionals as you can.",
@@ -186,7 +186,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What creates scope in Javascript?",
@@ -234,7 +234,7 @@
       "Async",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What's the difference between `==` and `===` in JS?",
@@ -243,7 +243,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What is \"callback hell\" and how can it be avoided?",
@@ -251,7 +251,7 @@
       "Javascript",
       "Async"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What's the difference between Primitive and Reference types in Javascript?",
@@ -260,7 +260,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "Explain event delegation.",
@@ -269,7 +269,7 @@
       "Concepts",
       "DOM"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Explain how prototypal inheritance works.",
@@ -277,7 +277,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What's the difference between a variable that is: `null`, `undefined` or undeclared? How would you go about checking for these?",
@@ -296,7 +296,7 @@
       "Concepts",
       "Scope"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "What's the difference between `.call` and `.apply`?",
@@ -304,7 +304,7 @@
     "categories": [
       "Javascript"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "Explain `Function.prototype.bind()`.",
@@ -312,7 +312,7 @@
     "categories": [
       "Javascript"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Explain \"hoisting\".",
@@ -320,7 +320,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
+    "points": 400
   },
   {
     "question": "Why is extending built-in JavaScript objects not a good idea?",
@@ -328,7 +328,7 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 400
+    "points": 600
   },
   {
     "question": "What is `\"use strict\";`? What are the advantages and disadvantages to using it?",
@@ -336,6 +336,6 @@
       "Javascript",
       "Concepts"
     ],
-    "points": 300
-  }  
+    "points": 400
+  }
 ]
