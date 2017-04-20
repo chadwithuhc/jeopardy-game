@@ -3,6 +3,6 @@
  */
 const app = require('express')()
 
-app.use(express.static('public'))
+app.use(express.static('dist'))
 
 app.listen(process.env.PORT || 3000)
