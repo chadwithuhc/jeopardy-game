@@ -12,7 +12,7 @@ export default class CategoryList extends React.Component {
 
   render() {
     return (
-      <section className="col-sm-2">
+      <section className="col flex-nowrap">
         <h2 className="category-title">{this.props.category}</h2>
         {this.props.options.map((option, i) => {
           let classes = classnames({

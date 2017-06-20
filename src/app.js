@@ -84,7 +84,7 @@ export default class App extends React.Component {
 
   renderSelectedCategories = () => {
     return this.state.selectedCategories.length && this.state.users ? (
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
         {this.state.selectedCategories.map((category) => {
           return <CategoryList category={category} key={category} options={QuestionsStore.getQuestionsForCategory(category)} onOptionOpen={this.onOptionOpen} />

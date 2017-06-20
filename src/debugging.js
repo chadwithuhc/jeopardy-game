@@ -26,7 +26,9 @@ export default {
   // Automatically selected categories
   mockCategories: false,
   mockCategoriesState: [ // CASE-SENSITIVE
-    'Front end', 'Back end', 'DOM', 'Phone Screen'
+    'Front end', 'Back end', 'DOM', 'Phone Screen',
+    'APIs', 'Async', 'Concepts', 'Node.js', 'OOP',
+    'ES6', 'Open-ended', 'Scope', 'Security'
   ]
 
 }
