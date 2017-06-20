@@ -11,6 +11,10 @@ export default class CategoryList extends React.Component {
   }
 
   render() {
+    if (this.props.options.length === 0) {
+      return null
+    }
+
     return (
       <section className="col flex-nowrap">
         <h2 className="category-title">{this.props.category}</h2>
