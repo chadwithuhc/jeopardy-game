@@ -4,7 +4,7 @@ import classnames from 'classnames'
 export default class CategoryList extends React.Component {
 
   openOption(option) {
-    console.log('openOption', option, !option.answered)
+    console.log('openOption', option, !option.answered);
     if (!option.answered) {
       this.props.onOptionOpen(option)
     }
@@ -16,14 +16,16 @@ export default class CategoryList extends React.Component {
     }
 
     return (
-      <section className="col flex-nowrap">
-        <h2 className="category-title">{this.props.category}</h2>
+      <section className="category-list col pt-5 pb-5 flex-nowrap">
+        <h2 className="category-title mb-5">{this.props.category}</h2>
         {this.props.options.map((option, i) => {
           let classes = classnames({
             'answered': option.answered,
             'category-question': true
-          })
-          return <p className={classes} key={i} onClick={() => this.openOption(option)}>{option.points}</p>
+          });
+          return <div className="text-center mb-2" key={i}>
+            <div className="btn btn-lg btn-primary" onClick={() => this.openOption(option)}>{option.points}</div>
+          </div>
         })}
       </section>
     )
@@ -33,4 +35,4 @@ export default class CategoryList extends React.Component {
 
 CategoryList.defaultProps = {
   onOptionOpen: () => {}
-}
+};

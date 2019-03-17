@@ -6,8 +6,8 @@ class QuestionsStore {
     }
   }
 
-  categories = []
-  data = []
+  categories = [];
+  data = [];
 
   loadData = () => {
     return fetch('https://api.cosmicjs.com/v1/clowde/object-type/devterms?limit=500')
@@ -19,32 +19,32 @@ class QuestionsStore {
             categories: obj.metadata.categories,
             points: obj.metadata.points
           }
-        })
+        });
 
         // DEBUG
         // This is the list of categories we have marked as an option on the server, not necessarily the categories we loaded
-        console.log('Available Categories:', data.objects[0].metafields[0].options.map((opt) => opt.value))
+        console.log('Available Categories:', data.objects[0].metafields[0].options.map((opt) => opt.value));
 
-        this.load(questions)
+        this.load(questions);
 
         return {
           questions: this.data,
           categories: this.categories
         }
       })
-  }
+  };
 
   load = (questions) => {
-    questions.forEach(this.addQuestion)
-    this.reportStats()
-    this.sortQuestions()
+    questions.forEach(this.addQuestion);
+    this.reportStats();
+    this.sortQuestions();
     this.sortCategories()
-  }
+  };
 
   reportStats = () => {
-    console.info('Categories Loaded:', this.categories.length, this.categories)
+    console.info('Categories Loaded:', this.categories.length, this.categories);
     console.info('Questions Loaded:', this.data.length, this.data)
-  }
+  };
 
   addQuestion = (question) => {
     // Add the categories
@@ -53,29 +53,29 @@ class QuestionsStore {
     }
     // Add to our internal cache
     this.data.push(question)
-  }
+  };
 
   addCategory = (category) => {
     if (this.categories.indexOf(category) === -1) {
       this.categories.push(category)
     }
-  }
+  };
 
   getQuestionsForCategory = (category) => {
     return this.data.filter((item) => {
       return item.categories.indexOf(category) > -1
     })
-  }
+  };
 
   removeQuestion = (question) => {
     this.data = this.data.filter((item) => {
       return (item.question !== question.question)
     })
-  }
+  };
 
   sortQuestions = () => {
     this.data.sort((a, b) => a.points - b.points)
-  }
+  };
 
   sortCategories = () => {
     this.categories.sort()
