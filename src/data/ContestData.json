@@ -1,0 +1,24 @@
+[
+  {
+    "question": "'Настоящее' название языка JavaScript",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Полное название DOM",
+    "categories": [
+      "DOM"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Какой результат будет выведен в обоих случаях?",
+    "html": "<div>asdasd asdasdasd asdasdasda</div>/n U+0009 <div>next line</div>",
+    "categories": [
+      "DOM"
+    ],
+    "points": 100
+  }
+]

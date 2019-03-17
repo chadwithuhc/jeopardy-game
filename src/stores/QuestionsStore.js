@@ -16,6 +16,7 @@ class QuestionsStore {
         const questions = data.objects.map((obj) => {
           return {
             question: obj.title,
+            html: obj.html,
             categories: obj.metadata.categories,
             points: obj.metadata.points
           }

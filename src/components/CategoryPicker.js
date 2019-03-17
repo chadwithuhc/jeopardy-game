@@ -43,7 +43,7 @@ export default class CategoryPicker extends React.Component {
             <div className="row">
                 {this.props.categories.map((category) => {
                   let active = this.state.selected.indexOf(category) > -1 ? "btn-primary" : "btn-outline-primary";
-                  return <div className="col-4 mb-3" key={category}>
+                  return <div className="col-md-auto mb-3" key={category}>
                     <li className={'btn btn-lg btn-block ' + active}  onClick={this.toggleSelected.bind(this, category)}>{category}</li>
                   </div>
                 })}
