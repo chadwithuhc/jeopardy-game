@@ -14,12 +14,12 @@
     "points": 100
   },
   {
-    "question": "Какой селектор позволит получить все элименты с текстом внутри",
-    "html": "<div><span/>asdsad<span></div>",
+    "question": "Какой кратчайший CSS селектор позволит получить все элименты с текстом внутри",
+    "html": "<iframe src=\"https://codesandbox.io/embed/wyj8rzkvo5?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
     "categories": [
       "CSS"
     ],
-    "points": 100
+    "points": 700
   },
   {
     "question": "Какой результат будет выведен консоль?",
@@ -28,5 +28,13 @@
       "Javascript"
     ],
     "points": 600
+  },
+  {
+    "question": "Какой результат будет в консоли?",
+    "html": "<iframe src=\"https://codesandbox.io/embed/1j8qklj1q?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 700
   }
 ]
