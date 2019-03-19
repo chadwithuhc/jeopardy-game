@@ -15,7 +15,7 @@
   },
   {
     "question": "Какой результат будет выведен в обоих случаях?",
-    "html": "<div>asdasd asdasdasd asdasdasda</div>/n U+0009 <div>next line</div>",
+    "html": "<div>asdasd asdasdasd asdasdasda</div><div>next line</div>",
     "categories": [
       "DOM"
     ],

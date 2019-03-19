@@ -50,13 +50,12 @@ export default class QuestionFullscreen extends React.Component {
 
     let question = this.props.question ? this.props.question.question : null;
     let code = this.props.question.html !== undefined ? this.props.question.html : null;
+    let codeBlock = <div><pre className="mt-3"><code dangerouslySetInnerHTML={{ __html: code }} /></pre></div>;
 
     return (
       <div className={classes}>
         <h1>{question}</h1>
-        <pre className="mt-3">
-          <code dangerouslySetInnerHTML={{ __html: code }} />
-        </pre>
+        {code ? codeBlock : ""}
         {this.renderUserButtons()}
         <div className="user-answerblock-close mt-4">
           <button className="btn btn-info" onClick={() => this.closeWindow()}>Close</button>

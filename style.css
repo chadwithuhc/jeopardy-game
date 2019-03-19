@@ -34,6 +34,15 @@
     padding: 20%;
     text-align: center;
 }
+
+.question-fullscreen pre{
+    background: #ccc;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: left;
+    display: inline-block;
+}
+
 .question-fullscreen h1 {
     margin: auto;
 }
