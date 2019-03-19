@@ -7,18 +7,26 @@
     "points": 100
   },
   {
-    "question": "Полное название DOM",
+    "question": "Расшифровка аббревиатуры 'DOM'",
     "categories": [
       "DOM"
     ],
     "points": 100
   },
   {
-    "question": "Какой результат будет выведен в обоих случаях?",
-    "html": "<div>asdasd asdasdasd asdasdasda</div><div>next line</div>",
+    "question": "Какой селектор позволит получить все элименты с текстом внутри",
+    "html": "<div><span/>asdsad<span></div>",
     "categories": [
-      "DOM"
+      "CSS"
     ],
     "points": 100
+  },
+  {
+    "question": "Какой результат будет выведен консоль?",
+    "html": "<iframe src=\"https://codesandbox.io/embed/ko580vro73?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 600
   }
 ]

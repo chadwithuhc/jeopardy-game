@@ -31,8 +31,7 @@
     height: 100vh;
     background-color: DodgerBlue;
     color: white;
-    padding: 20%;
-    text-align: center;
+    display: table;
 }
 
 .question-fullscreen pre{
@@ -45,6 +44,16 @@
 
 .question-fullscreen h1 {
     margin: auto;
+}
+.question-fullscreen-inner-vertical{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.question-fullscreen-inner-content{
+    max-height: 100vh;
+    padding: 30px 10%;
+    overflow: auto;
 }
 .user-answerblock {
     margin: 0 auto;
