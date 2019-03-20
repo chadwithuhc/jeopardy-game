@@ -7,19 +7,33 @@
     "points": 100
   },
   {
-    "question": "Расшифровка аббревиатуры 'DOM'",
+    "question": "Что отобразиться в консоли после ввода команды 'new Date()' и в каком формате?",
     "categories": [
-      "DOM"
+      "Javascript"
     ],
-    "points": 100
+    "points": 200
   },
   {
-    "question": "Какой кратчайший CSS селектор позволит получить все элименты с текстом внутри",
-    "html": "<iframe src=\"https://codesandbox.io/embed/wyj8rzkvo5?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
+    "question": "Какой будет результат выполнения скрипта?",
+    "html": "<iframe src=\"https://codesandbox.io/embed/xrlqr9n39q?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
     "categories": [
-      "CSS"
+      "Javascript"
     ],
-    "points": 700
+    "points": 300
+  },
+  {
+    "question": "Назовите 3 или более типа данных в JS?",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 400
+  },
+  {
+    "question": "В чем отличие if(a=b), if(a==b), if(a===b) ?",
+    "categories": [
+      "Javascript"
+    ],
+    "points": 500
   },
   {
     "question": "Какой результат будет выведен консоль?",
@@ -36,5 +50,62 @@
       "Javascript"
     ],
     "points": 700
+  },
+  {
+    "question": "Какой кратчайший CSS селектор позволит получить все элименты с текстом внутри",
+    "html": "<iframe src=\"https://codesandbox.io/embed/wyj8rzkvo5?fontsize=14&view=editor\" style=\"width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;\" sandbox=\"allow-modals allow-forms allow-popups allow-scripts allow-same-origin\"></iframe>",
+    "categories": [
+      "CSS"
+    ],
+    "points": 700
+  },
+  {
+    "question": "Расшифровка аббревиатуры 'DOM'?",
+    "categories": [
+      "DOM"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Почему рекомендуется подключать теги <script> в конец <body>?",
+    "categories": [
+      "DOM"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Какой тег скрывеает свое содержимое от поисковых роботов?",
+    "categories": [
+      "DOM"
+    ],
+    "points": 300
+  },
+  {
+    "question": "Как изменить цвет кнопки внутри тега <iframe>?",
+    "categories": [
+      "DOM"
+    ],
+    "points": 400
+  },
+  {
+    "question": "Чем занимается W3C?",
+    "categories": [
+      "Общие"
+    ],
+    "points": 100
+  },
+  {
+    "question": "Что такое CoffeeScript, TypeScript и в чем их отличие?",
+    "categories": [
+      "Общие"
+    ],
+    "points": 200
+  },
+  {
+    "question": "Назовите 2 популярные парадигмы в программировании?",
+    "categories": [
+      "Общие"
+    ],
+    "points": 400
   }
 ]
