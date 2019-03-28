@@ -6,17 +6,17 @@ A Jeopardy Game built in ReactJS
 
 Clone locally and run `npm install`
 
-Then to start, run `npm run local`
+Then to start, run `npm run start:dev`
 
 Files will be watched and built continuously until you quit the command
 
 
 ## Features
 
-- [ ] Game setup
+- [x] Game setup
   - [x] Enter user names
   - [x] Choose Categories
-  - [ ] Polish Design
+  - [x] Polish Design
 - [ ] Game play
   - [x] Display Jeopardy board
   - [x] Players and score box
@@ -39,5 +39,6 @@ Files will be watched and built continuously until you quit the command
 - We don't allow buzzing in at the moment
 - When you open a question you can click a button for the user who answered correctly
   - If a user doesn't know the answer, you can give it to another user for points
+  - If someone gave the wrong answer, you can deduct the price from his points
   - If nobody knows the answer, use the close button to remove the question and award no points
 - The game ends whenever you're done or out of questions
