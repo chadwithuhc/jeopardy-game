@@ -8,12 +8,13 @@
  import PhoneScreenData from './data/PhoneScreenData.json'
  import JavascriptData from './data/JavascriptData.json'
  import BackendData from './data/BackendData.json'
+ import ContestData from './data/ContestData.json'
 
 export default {
 
   // Mock all question data
   mockQuestions: true,
-  mockQuestionsState: PhoneScreenData.concat(JavascriptData).concat(BackendData),
+  mockQuestionsState: ContestData,
 
   // Auto-filled users
   mockUsers: false,

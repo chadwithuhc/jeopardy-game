@@ -4,15 +4,15 @@ import classnames from 'classnames'
 export default class CategoryPicker extends React.Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       selected: this.props.selected
     }
   }
 
   toggleSelected(category) {
-    let index = this.state.selected.indexOf(category)
-    let selected = this.state.selected
+    let index = this.state.selected.indexOf(category);
+    let selected = this.state.selected;
     if (index > -1) {
       selected.splice(index, 1)
     }
@@ -25,23 +25,32 @@ export default class CategoryPicker extends React.Component {
     })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault();
+
+    this.props.onSaveCategories(this.state.selected);
+  };
+
   render() {
     let classes = classnames({
       'category-picker': true
-    })
+    });
     return (
-      <section className={classes}>
-        <h2>Pick Categories</h2>
-        <ul className="list-group">
-          {this.props.categories.map((category) => {
-            let classes = classnames({
-              'list-group-item': true,
-              'bg-success': this.state.selected.indexOf(category) > -1
-            })
-            return <li className={classes} key={category}  onClick={this.toggleSelected.bind(this, category)}>{category}</li>
-          })}
-        </ul>
-        <button className="btn btn-success" onClick={() => this.props.onSaveCategories(this.state.selected)}>Add Categories</button>
+      <section className="jumbotron mb-0 text-center">
+        <form onSubmit={this.onSubmit} className={classes}>
+          <h1 className="mb-5">Pick Categories</h1>
+          <div className="container">
+            <div className="row">
+                {this.props.categories.map((category) => {
+                  let active = this.state.selected.indexOf(category) > -1 ? "btn-primary" : "btn-outline-primary";
+                  return <div className="col-md-auto mb-3" key={category}>
+                    <li className={'btn btn-lg btn-block ' + active}  onClick={this.toggleSelected.bind(this, category)}>{category}</li>
+                  </div>
+                })}
+            </div>
+          </div>
+          <button type="submit" className="btn btn-success mt-2">Add Categories</button>
+        </form>
       </section>
     )
   }
@@ -50,4 +59,4 @@ export default class CategoryPicker extends React.Component {
 
 CategoryPicker.defaultProps = {
   categories: []
-}
+};
